@@ -14,6 +14,10 @@
 - Eat eggs
 - Drink coffee
 
+# Around noon
+
+- Eat lunch
+
 # In the evening
 
 ## Dinner
