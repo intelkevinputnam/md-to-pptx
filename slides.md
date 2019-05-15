@@ -1,45 +1,39 @@
-% Sample MD to PPTX presentation
+% Plugin Content Curation for Quarterly Publication in Golden Slide Deck
 % Kevin Putnam
-% May 13, 2019
+% May 15, 2019
 
-# In the morning
+# Summary
 
-## Getting up
+Each quarter we will be updating the golden slide deck with the latest content from each of the supported plugins. In order to facilitate this process we are asking that each plugin team keep an up to date markdown file in their repository with only a summary and key takeaways for their plugin.
 
-- Turn off alarm
-- Get out of bed
+# Call to Action
 
-## Breakfast
+We use pandoc 2.7 or newer to process the markdown. Instructions on the flavor of markdown used to generate the slides are available in the pandoc [manual](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc). 
 
-- Eat eggs
-- Drink coffee
+In order for us to process it we will need:
 
-# Around noon
+1. URL (https) for cloning the repo
+2. Full path to the markdown file (including filename) inside of the repo
 
-- Eat lunch
+# Building the Slides
 
-# In the evening
+You can use this presentation as a guide for creating your own presentation. 
 
-## Dinner
+We recommend building the slide presentation locally to verify that it renders as intended and that any included material like images shows up properly.
 
-- Eat spaghetti
-- Drink wine
+\ 
 
-------------------
+```bash
+pandoc input-file-name.md -o output-file-name.pptx
+```
 
-![picture of spaghetti](spaghetti.jpg)
+# Final Product
 
-## Going to sleep
+Content from all of the repos will be collated into a master .pptx document and posted as part of a tagged release in our GitHub repository. 
 
-- Get in bed
-- Count sheep
+# Examples
 
----
-
-# Building slides with Pandoc
-
-- command: pandoc slides.md -o slides.pptx
-- [Manual](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) for producing slides with Pandoc.
+The following slides demonstrate the markdown syntax for a few useful formatting methods.
 
 # Two column layout
 
@@ -53,3 +47,6 @@ Content of the right column.
 :::
 ::::::
 
+------------------
+
+![picture of spaghetti](spaghetti.jpg)

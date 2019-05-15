@@ -9,12 +9,12 @@ script:
   - wget https://github.com/jgm/pandoc/releases/download/2.7.2/pandoc-2.7.2-1-amd64.deb
   - sudo dpkg -i pandoc-2.7.2-1-amd64.deb
   - python3 get-readmes.py
-  #- pandoc -f markdown -t pptx slides.md -o slides.ppt
+  - pandoc -f markdown -t pptx slides.md -o slides.pptx
 
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
-  file: final.docx
+  file: final.docx slides.pptx
   skip_cleanup: true
   on:
     tags: true
