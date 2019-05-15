@@ -1,7 +1,7 @@
 import os
 
 file = 'plugin-list'
-gitPrefix = 'git@github.com:intel/'
+gitPrefix = 'https://github.com/intel/'
 gitSuffix = '.git'
 absPath = os.path.abspath(__file__)
 homeDir = os.path.dirname(absPath)
