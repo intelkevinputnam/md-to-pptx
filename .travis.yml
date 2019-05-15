@@ -14,7 +14,9 @@ script:
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
-  file: final.docx slides.pptx
+  file: 
+    - "final.docx"
+    - "slides.pptx"
   skip_cleanup: true
   on:
     tags: true
