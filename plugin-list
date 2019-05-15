@@ -1,0 +1,6 @@
+bond-cni README.md
+userspace-cni-network-plugin README.md
+multus-cni README.md
+sriov-network-device-plugin README.md
+CPU-Manager-for-Kubernetes README.md
+intel-device-plugins-for-kubernetes cmd/gpu_plugin/README.md cmd/qat_plugin/README.md cmd/fpga_plugin/README.md
