@@ -14,8 +14,11 @@ with open(file) as f:
 for line in plugins:
     args = line.split()
     gitDir = args.pop(0)
-    #os.system('git clone ' + gitPrefix + gitDir + gitSuffix)
 
+    #clone the repo
+    os.system('git clone ' + gitPrefix + gitDir + gitSuffix)
+
+    #generate docx for all readmes associated with repo
     for readmePath in args:
         os.chdir(os.path.dirname(gitDir + "/" + readmePath))
         outputFileName = 'readme' + str(numFiles) + '.docx'
@@ -25,4 +28,5 @@ for line in plugins:
 
         numFiles += 1
 
+#merge all resulting docx files into a single docx
 os.system('pandoc readme*.docx -o final.docx')
