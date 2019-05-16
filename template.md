@@ -1,7 +1,7 @@
 # Project Name
 
-last updated: 
-project owner/contact: 
+* last updated: 
+* project owner/contact: 
 
 ## Summary
 
