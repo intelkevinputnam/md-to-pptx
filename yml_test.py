@@ -1,3 +1,15 @@
+# External dependencies (pip install required): 
+#    * markdown
+#    * docutils
+#
+# Python installed dependencies:
+#    * yaml
+#    * urllib
+#    * BeautifulSoup
+#
+# Input is YAML file 
+#
+
 import yaml
 import markdown
 
