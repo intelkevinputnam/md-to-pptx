@@ -19,37 +19,6 @@ benefit_copy:
       
       There are two primary use cases: one is hardware vendor-independent and uses the Intel Media SDK, and the other uses OpenCL™ code tuned for high end Intel devices. For example, the Intel Media SDK can offload video transcoding operations or the OpenCL™ libraries can provide computation acceleration for Intel GPUs.
 additional_content:
-   title: The MD Content
-   md: |
-      ## Header Row ##
-
-      This is the content that has "quote" content in it. It is MD content, so we can add bulleted lists and all sorts of goodness:
-      
-      * This is a bullet.
-      * This is a second bullet.
-     
-      This is a numbered list:
-     
-      1. One
-      1. Two
-     
-      Images too:
-
-      ![image](http://cdn.akc.org/content/article-body-image/housetrain_adult_dog_hero.jpg)
-   rst: |
-      This is reStructuredText
-      ########################
-
-      This is very similar to md, but is a bit simpler syntactically. 
-
-      .. image:: http://cdn.akc.org/content/article-body-image/housetrain_adult_dog_hero.jpg
-
-      Bulleted list:
-
-      * same
-      * same
-
-      Numbered list:
-
-      #. better
-      #. better
+   title: Additional Content
+   md: testing.md
+   rst: testing.rst

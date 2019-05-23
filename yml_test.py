@@ -56,16 +56,19 @@ html = """
   <body>"""
 
 if 'md' in yamlObject['additional_content']:
-    html += markdown.markdown(yamlObject['additional_content']['md'])
+    with open(yamlObject['additional_content']['md']) as mdF:
+        mdContent = mdF.read()
+        html += markdown.markdown(mdContent)
 
 if 'rst' in yamlObject['additional_content']:
-    rstContent = yamlObject['additional_content']['rst']
-    tree = publish_doctree(rstContent)
-    htmlOutput = publish_from_doctree(tree, writer_name='html').decode()
-    soup = BeautifulSoup(htmlOutput, features='lxml')
-    body = soup.find('body')
-    htmlOutput = body.findChildren()
-    html += str(htmlOutput[0])
+    with open(yamlObject['additional_content']['rst']) as rstF:
+        rstContent = rstF.read()
+        tree = publish_doctree(rstContent)
+        htmlOutput = publish_from_doctree(tree, writer_name='html').decode()
+        soup = BeautifulSoup(htmlOutput, features='lxml')
+        body = soup.find('body')
+        htmlOutput = body.findChildren()
+        html += str(htmlOutput[0])
 
 html += """  </body>
 </html>""" 
