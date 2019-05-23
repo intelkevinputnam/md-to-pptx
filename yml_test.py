@@ -1,3 +1,4 @@
+##########################################################
 # External dependencies (pip install required): 
 #    * markdown
 #    * docutils
@@ -9,6 +10,13 @@
 #
 # Input is YAML file 
 #
+# Code inspiration for rst conversion: 
+#    https://stackoverflow.com/questions/32167384/how-do-i-convert-a-docutils-document-tree-into-an-html-string
+#
+# Kevin Putnam
+# kevin.putnam@intel.com
+#
+##########################################################
 
 import yaml
 import markdown
@@ -58,7 +66,6 @@ if 'rst' in yamlObject['additional_content']:
     body = soup.find('body')
     htmlOutput = body.findChildren()
     html += str(htmlOutput[0])
-
 
 html += """  </body>
 </html>""" 
