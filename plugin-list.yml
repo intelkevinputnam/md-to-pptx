@@ -1,0 +1,24 @@
+bond-cni:
+  - repo: https://github.com/intel/bond-cni.git
+  - path: README.md
+userspace-cni-network-plugin:
+  - repo: https://github.com/intel/userspace-cni-network-plugin.git
+  - path: README.md 
+multus-cni:
+  - repo: https://github.com/intel/multus-cni.git
+  - path: README.md
+sriov-network-device-plugin:
+  - repo: https://github.com/intel/sriov-network-device-plugin.git
+  - path: README.md
+CPU-Manager-for-Kubernetes:
+  - repo: https://github.com/intel/CPU-Manager-for-Kubernetes.git
+  - path: README.md
+gpu_plugin:
+  - repo: https://github.com/intel/intel-device-plugins-for-kubernetes.git
+  - path: cmd/gpu_plugin/README.md
+qat_plugin:
+  - repo: https://github.com/intel/intel-device-plugins-for-kubernetes.git
+  - path: cmd/qat_plugin/README.md
+fpga_plugin:
+  - repo: https://github.com/intel/intel-device-plugins-for-kubernetes.git
+  - path: cmd/fpga_plugin/README.md

@@ -1,0 +1,55 @@
+id: 9
+title: 'Intel® GPU Device Plug-in'
+type: 'building block'
+categories:
+  - 'Compute & Accelerators'
+summary: 'Store, stream, transcode -- offline or real-time conferencing -- OTT, VOD, IPTV in Kubernetes*'
+banner:
+  title: 'Store, stream, transcode -- offline or real-time conferencing -- OTT, VOD, IPTV in Kubernetes with Intel GPUs and Intel Device Plugins for Kubernetes*'
+  description: 'The GPU device plug-in offloads the processing of computation-intensive workloads to GPU hardware'
+github_url: 'https://github.com/intel/intel-device-plugins-for-kubernetes/blob/master/cmd/gpu_plugin/README.md'
+architecture_diagram: 'https://01.org/sites/default/files/gpu.png'
+benefit_copy: 
+  title: ''
+  description: |
+      The Intel GPU plugin supports the following devices:
+
+      * Integrated GPUs within Intel® Core™ and Intel® Xeon® processors
+      * Intel® Visual Compute Accelerator (Intel® VCA)
+      
+      There are two primary use cases: one is hardware vendor-independent and uses the Intel Media SDK, and the other uses OpenCL™ code tuned for high end Intel devices. For example, the Intel Media SDK can offload video transcoding operations or the OpenCL™ libraries can provide computation acceleration for Intel GPUs.
+additional_content:
+   title: The MD Content
+   md: |
+      ## Header Row ##
+
+      This is the content that has "quote" content in it. It is MD content, so we can add bulleted lists and all sorts of goodness:
+      
+      * This is a bullet.
+      * This is a second bullet.
+     
+      This is a numbered list:
+     
+      1. One
+      1. Two
+     
+      Images too:
+
+      ![image](http://cdn.akc.org/content/article-body-image/housetrain_adult_dog_hero.jpg)
+   rst: |
+      This is reStructuredText
+      ########################
+
+      This is very similar to md, but is a bit simpler syntactically. 
+
+      .. image:: http://cdn.akc.org/content/article-body-image/housetrain_adult_dog_hero.jpg
+
+      Bulleted list:
+
+      * same
+      * same
+
+      Numbered list:
+
+      #. better
+      #. better
