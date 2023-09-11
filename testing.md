@@ -1,11 +1,5 @@
 ## Header Row ##
 
-{% note %}
-
-**Note:** Not all webhook events trigger workflows.
-
-{% endnote %}
-
 This is the content that has "quote" content in it. It is MD content, so we can add bulleted lists and all sorts of goodness:
 
 * This is a bullet.
